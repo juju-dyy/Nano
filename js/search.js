@@ -51,7 +51,7 @@ function search(query){
         case "-g":
           query = query.substr(3);
           window.location =
-             "https://drive.google.com/drive/u/2/search?query="
+             "https://drive.google.com/drive/u/2/search?q="
              query.replaceChars("", "+");
           break;
 
@@ -59,13 +59,8 @@ function search(query){
           query = query.substr(3);
           window.location =
              "https://drive.google.com/drive/u/2/search?q="
-             query.replaceChars("", "+");
+             query.replaceChars(" ", "%20");
           break;
-
-          case "-b":
-query = query.substr(3);
-window.location = "http://bato.to/search?name=" 
-break;
 
         default:
             window.location="https://www.google.fr/search?q=" +
