@@ -51,15 +51,13 @@ function search(query){
         case "-g":
           query = query.substr(3);
           window.location =
-             "https://drive.google.com/drive/u/2/search?q=" +
-             query.replaceChars(" ", "%20");
+             "https://drive.google.com/drive/u/2/search?query="
           break;
 
           case "-m":
           query = query.substr(3);
           window.location =
-             "https://drive.google.com/drive/u/2/search?q=" +
-             query.replaceChars(" ", "+");
+             "https://drive.google.com/drive/u/2/search?q="
           break;
 
         default:
