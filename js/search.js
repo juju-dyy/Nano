@@ -14,9 +14,9 @@ String.prototype.replaceChars = function(character, replacement){
  
 function search(query){
     switch(query.substr(0, 2)){
-        case "-u":
+        case "-g":
             query = query.substr(3);
-            window.location = "https://userstyles.org/styles/browse?search_terms=" +
+            window.location = "https://drive.google.com/drive/u/2/search?q=" +
             query.replaceChars(" ", "+");
             break;
 
@@ -34,10 +34,10 @@ function search(query){
             query.replaceChars(" ", "%20");
             break;
 
-        case "-n":
+        case "-r":
             query = query.substr(3);
             window.location = 
-    	"https://www.nyaa.si/?f=0&c=1_2&q=" + 
+    	"https://www.reddit.com/search/?q=" + 
     	query.replaceChars("+", "%2B");
     	break;
 
