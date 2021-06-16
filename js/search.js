@@ -62,6 +62,11 @@ function search(query){
              query.replaceChars("", "+");
           break;
 
+          case "-b":
+query = query.substr(3);
+window.location = "http://bato.to/search?name=" 
+break;
+
         default:
             window.location="https://www.google.fr/search?q=" +
                 query.replaceChars("", "+");
