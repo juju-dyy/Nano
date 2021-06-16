@@ -52,12 +52,14 @@ function search(query){
           query = query.substr(3);
           window.location =
              "https://drive.google.com/drive/u/2/search?query="
+             query.replaceChars("", "+");
           break;
 
           case "-m":
           query = query.substr(3);
           window.location =
              "https://drive.google.com/drive/u/2/search?q="
+             query.replaceChars("", "+");
           break;
 
         default:
